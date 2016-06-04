@@ -25,7 +25,7 @@ stdin.on('data', function (data) {
       return startExam();
     }
   } else {
-    if (count < (answer.length - 1)) {
+    if (count < answer.length) {
       // console.log(_data === answer[count]);
       if (_data !== answer[count]) {
         error.push({
@@ -38,7 +38,7 @@ stdin.on('data', function (data) {
     } else {
       console.log('一共' + answer.length + '题，错误' + error.length + '题');
       error.forEach(function (item) {
-        console.log('第' + item.index + '题，正确答案' + answer[item.index] + '，我的答案' + item.value);
+        console.log('第' + (item.index + 1) + '题，正确答案' + answer[item.index] + '，我的答案' + item.value);
       });
       process.exit(1);
     }
