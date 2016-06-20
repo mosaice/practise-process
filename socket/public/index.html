@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .notification {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="chat">
+    <ui id="message"></ui>
+  </div>
+  <form id="form">
+    <input type="text" id="input">
+    <button type="submit">Send</button>
+  </form>
+  <br>
+  <div>
+    <audio src="" controls="controls" id="audio"></audio>
+    <p><span id="dj"></span>&nbsp;&nbsp;&nbsp;<span id='playing'></span></p>
+  </div>
+  <form id="djform">
+    <h3>search songs</h3>
+    <input type="text" id="s">
+    <ul id="result"></ul>
+    <button type='submit'>Search</button>
+  </form>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/chat.js"></script>
+</body>
+</html>
