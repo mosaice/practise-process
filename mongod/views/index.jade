@@ -1,0 +1,10 @@
+extends ./layout.jade
+block content
+  if  (auth)
+    p welcome back, #{me.first}
+    a(href='/logout') Logout
+  else
+    p welcome new visitor
+    ul
+      li: a(href='/login') Login
+      li: a(href='/signup') Signup
