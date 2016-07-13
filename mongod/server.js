@@ -43,12 +43,13 @@ app.get('/login', function (req, res) {
 });
 
 app.post('/login', function (req, res, next) {
-  app.users.findOne({email: req.body.user.email, password: req.body.user.password}, function (err, doc) {
-    if (err) return next(err);
-    if (!doc) return res.send('<p>User not found </p>');
-    req.session.loggedIn = doc._id.toString();
-    res.redirect('/');
-  });
+  // app.users.findOne({email: req.body.user.email, password: req.body.user.password}, function (err, doc) {
+  //   if (err) return next(err);
+  //   if (!doc) return res.send('<p>User not found </p>');
+  //   req.session.loggedIn = doc._id.toString();
+  //   res.redirect('/');
+  // });
+  console.log(req.body);
 });
 
 app.get('/signup', function (req, res) {
@@ -73,18 +74,18 @@ app.listen(3000, function (err) {
   console.log('listen on http://localhost:3000');
 });
 
-var server = new mongodb.Server('127.0.0.1', 27017);
-var db = new mongodb.Db('web', server);
-
-db.open(function (err, client) {
-  if (err) console.log(err);
-  console.log('connect to mongodb');
-  app.users = client.collection('users');
-  client.ensureIndex('user', 'email', function (err) {
-    if (err) console.log(err);
-    client.ensureIndex('user', 'password', function (err) {
-      if (err) console.log(err);
-      console.log('ensured index');
-    });
-  });
-});
+// var server = new mongodb.Server('127.0.0.1', 27017);
+// var db = new mongodb.Db('web', server);
+//
+// db.open(function (err, client) {
+//   if (err) console.log(err);
+//   console.log('connect to mongodb');
+//   app.users = client.collection('users');
+//   client.ensureIndex('user', 'email', function (err) {
+//     if (err) console.log(err);
+//     client.ensureIndex('user', 'password', function (err) {
+//       if (err) console.log(err);
+//       console.log('ensured index');
+//     });
+//   });
+// });

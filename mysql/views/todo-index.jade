@@ -1,0 +1,16 @@
+extends ./todo-layout.jade
+block content
+  h2 projects
+  
+  #list
+    ul#project-list
+      each project in projects
+        li
+          a(href='project/#{project.id}/tasks')=project.title
+            span &nbsp;
+          a.delete(href='project/#{project.id}') x
+
+    form#add(action='/projects',method='POST')
+      input(type='text',name='title')
+      button(type='submit') submit
+          

@@ -1,0 +1,10 @@
+extends ./todo-layout.jade
+block content
+  h2 item for project #{project.title}
+  
+  #list
+    ul#task-list
+      each task in tasks
+        li
+          span= task.title
+          a.delete(href='/task/#{task.id}') x
