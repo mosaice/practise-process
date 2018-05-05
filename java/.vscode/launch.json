@@ -1,0 +1,145 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug (Launch)-ArrayTest",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "FileTest",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-ArrayTest1",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "ArrayTest1",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-CommandIn",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "CommandIn",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Fact",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "Fact",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-FileTest",
+      "request": "launch",
+      "cwd": ".",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "FileTest",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Input",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "Input",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-JavaWorld",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "JavaWorld",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-MyFile",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "MyFile",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Narcissistic",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "Narcissistic",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-NumDiff",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "NumDiff",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-PatientTest",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "PatientTest",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-RandomInt",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "RandomInt",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Rect",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "Rect",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Debug (Attach)",
+      "request": "attach",
+      "hostName": "localhost",
+      "port": 0
+    }
+  ]
+}
