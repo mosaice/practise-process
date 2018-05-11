@@ -34,7 +34,7 @@ function streamMap(proc, s) {
     ? []
     : consStream(proc(streamCar(s)), streamMap(proc, streamCdr(s)));
 }
-// Map 联想Array.prototype.forEach
+// ForEach 联想Array.prototype.forEach
 function streamForEach(proc, s) {
   if (streamNull(s)) return null;
   proc(streamCar(s));
