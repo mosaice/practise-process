@@ -11,7 +11,7 @@ function* steam(iter, initValue, endValue, endIndex) {
 }
 
 
-function steamMap(steam, func) {
+function steamForEach(steam, func) {
   let index = 0;
   for(let v of steam) {
     func(v, index++);
@@ -20,6 +20,6 @@ function steamMap(steam, func) {
 
 const s = steam((p, i) => i, 0, undefined, 1000000000);
 
-steamMap(s, console.log);
+steamForEach(s, console.log);
 
 
